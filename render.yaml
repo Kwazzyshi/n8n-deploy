@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: n8n
+    env: docker
+    plan: free
+    repo: https://github.com/YOUR_USERNAME/n8n-deploy
+    branch: main
+    dockerfilePath: Dockerfile
+    autoDeploy: true
