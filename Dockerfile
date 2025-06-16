@@ -1,4 +1,4 @@
-FROM n8nio/n8n
+FROM n8nio/n8n:1.39.1
 
 ENV N8N_BASIC_AUTH_ACTIVE=true \
 N8N_BASIC_AUTH_USER=admin \
