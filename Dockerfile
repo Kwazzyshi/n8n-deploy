@@ -9,4 +9,4 @@ N8N_PROTOCOL=http
 
 EXPOSE 5678
 
-CMD ["/usr/local/bin/n8n", "start"]
+CMD ["start"]
