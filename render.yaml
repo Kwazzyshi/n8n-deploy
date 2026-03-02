@@ -1,9 +1,24 @@
 services:
   - type: web
-    name: n8n
+    name: n8n-invoice-automation
     env: docker
     plan: free
-    repo: https://github.com/YOUR_USERNAME/n8n-deploy
-    branch: main
-    dockerfilePath: Dockerfile
     autoDeploy: true
+
+    dockerfilePath: ./Dockerfile
+
+    envVars:
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: "true"
+
+      - key: N8N_BASIC_AUTH_USER
+        sync: false
+
+      - key: N8N_BASIC_AUTH_PASSWORD
+        sync: false
+
+      - key: OPENROUTER_API_KEY
+        sync: false
+
+      - key: LLAMAPARSE_API_KEY
+        sync: false
