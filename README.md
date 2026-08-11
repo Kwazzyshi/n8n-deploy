@@ -161,7 +161,7 @@ This repository contains Docker configuration to deploy n8n on Render.
 
 ### Required Environment Variables
 
-Set the following in Render dashboardkk
+Set the following in Render dashboard:
 
 
 ---
